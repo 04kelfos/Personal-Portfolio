@@ -7,12 +7,13 @@
 .hero {
   background-color: var(--hero-color);
   text-align: center;
-  padding: 150px 20px;
+  padding: 140px 20px;
 }
 .hero h1 {
   font-family: var(--heading-font-family);
   color: black;
   font-size: 60px;
+  line-height: 1.5;
 }
 .hero p {
   font-family: var(--default-font-family);
@@ -20,6 +21,7 @@
   font-size: 40px;
   font-weight: bold;
   margin: 0;
+  line-height: 1;
 }
 .hero h2 {
   font-family: var(--default-font-family);
@@ -34,4 +36,48 @@
   padding: 15px 30px;
   font-family: var(--default-font-family);
   margin-top: 20px;
+}
+.featured h2 {
+  font-family: var(--default-font-family);
+  text-align: center;
+  font-size: 35px;
+}
+.featured img {
+  background-color: var(--hero-color);
+  padding: 20px 20px;
+}
+.feature {
+  text-align: center;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  font-size: 40px;
+}
+.featured p {
+  display: flex;
+  justify-content: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.featured h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.featured a {
+  display: flex;
+  justify-content: center;
+  margin: 0 40px;
+}
+@media (max-width: 896px) {
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
 }
