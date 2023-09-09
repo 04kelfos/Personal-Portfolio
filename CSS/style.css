@@ -85,3 +85,15 @@
 .navbar {
   background-color: var(--hero-color);
 }
+.content-container {
+  padding: 60px 20px;
+}
+h1 {
+  text-align: center;
+  font-family: var(--heading-font-family);
+  font-size: 45px;
+  font-weight: bold;
+}
+img {
+  width: 300px;
+}
