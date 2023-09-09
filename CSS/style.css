@@ -1,7 +1,7 @@
 :root {
   --hero-color: #f9f7fd;
   --heading-font-family: "Victor Mono", monospace;
-  --default-font-family: "Unica One", cursive;
+  --default-font-family: "Questrial", sans-serif;
   --branding-color: #6c63ff;
 }
 .hero {
@@ -26,6 +26,7 @@
 .hero h2 {
   font-family: var(--default-font-family);
   color: black;
+  font-weight: bold;
 }
 .btn-primary {
   background-color: var(--branding-color);
@@ -80,4 +81,7 @@
     display: flex;
     justify-content: center;
   }
+}
+.navbar {
+  background-color: var(--hero-color);
 }
