@@ -121,7 +121,7 @@ p {
   text-decoration: none;
   line-height: 0.8;
 }
-.icons a:visited {
+.icons a {
   color: black;
 }
 .icons a:hover {
