@@ -1,17 +1,19 @@
 :root {
-  --hero-color: #f9f7fd;
+  --hero-color: #cdf0ea;
   --heading-font-family: "Victor Mono", monospace;
   --default-font-family: "Questrial", sans-serif;
   --branding-color: #6c63ff;
 }
 /* indexpage */
-.hero {
+body {
   background-color: var(--hero-color);
   text-align: center;
-  padding: 140px 20px;
+}
+.hero {
+  margin-top: 50px;
 }
 .hero h1 {
-  font-family: var(--heading-font-family);
+  font-family: var(--default-font-family);
   color: black;
   font-size: 60px;
   line-height: 1.5;
@@ -29,15 +31,21 @@
   color: black;
   font-weight: bold;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
 .btn-primary {
   background-color: var(--branding-color);
   border-radius: 30px;
   color: white;
   font-size: 18px;
   line-height: 26px;
-  padding: 15px 30px;
   font-family: var(--default-font-family);
   margin-top: 20px;
+  margin-left: 10px;
 }
 .featured h2 {
   font-family: var(--default-font-family);
@@ -75,6 +83,36 @@
 .navbar {
   background-color: var(--hero-color);
 }
+.wave {
+  animation-name: wave-animation; /* Name of @keyframes element below */
+  animation-duration: 0.75s; /* Wave speed */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  transform-origin: 70% 70%; /* Pivot from bottom-left palm */
+  display: inline-block;
+  font-size: 60px;
+}
+
+.wave:hover {
+  animation-play-state: running; /* Play animation on mouse hover */
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(12deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 /* the .about-section */
 
 .about-section h1 {

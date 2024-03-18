@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../SCR-Week-Three-Homework"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Personal-Portfolio"
+  }
+}
